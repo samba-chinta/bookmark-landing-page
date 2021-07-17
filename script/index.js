@@ -22,8 +22,13 @@ simpleBookmark.onclick = () => {
   tabsLinks[1].classList.remove("indicator");
   tabsLinks[2].classList.remove("indicator");
   tab2.style.display = "none";
-  tab1.style.display = "flex";
-  tab1.style.flexDirection = "column";
+  if(window.innerWidth <= 750){
+    tab1.style.display = "flex";
+    tab1.style.flexDirection = "column";
+  }else{
+    tab1.style.display = "grid";
+    console.log("tab-1");
+  }
   tab3.style.display = "none";
 }
 
@@ -32,8 +37,12 @@ speedySearch.onclick = () => {
   tabsLinks[0].classList.remove("indicator");
   tabsLinks[2].classList.remove("indicator");
   tab1.style.display = "none";
-  tab2.style.display = "flex";
-  tab2.style.flexDirection = "column";
+  if(window.innerWidth <= 750){
+    tab2.style.display = "flex";
+    tab2.style.flexDirection = "column";
+  }else{
+    tab2.style.display = "grid";
+  }
   tab3.style.display = "none";
 }
 
@@ -42,8 +51,12 @@ easySharing.onclick = () => {
   tabsLinks[1].classList.remove("indicator");
   tabsLinks[0].classList.remove("indicator");
   tab1.style.display = "none";
-  tab3.style.display = "flex";
-  tab3.style.flexDirection = "column";
+  if(window.innerWidth <= 750){
+    tab3.style.display = "flex";
+    tab3.style.flexDirection = "column";
+  }else{
+    tab3.style.display = "grid";
+  }
   tab2.style.display = "none";
 }
 
