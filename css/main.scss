@@ -1,0 +1,153 @@
+@import url("https://fonts.google.com/specimen/Rubik");
+@import '_globals';
+.landing-page__header.mobile-bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(37, 43, 70, 0.8);
+}
+
+.landing-page__header {
+  width: 100%;
+  height: 100%;
+}
+
+.landing-page__header .landing-page__nav-main {
+  display: flex;
+  width: 80vw;
+  margin: 2rem auto;
+  background-color: transparent;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landing-page__header .landing-page__nav-main .landing-page_nav_togglers {
+  display: none;
+}
+
+.landing-page__header .landing-page__nav-main .landing-page__navigation {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Rubik, Arial;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.landing-page__header .landing-page__nav-main .landing-page__navigation .nav-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.landing-page__header .landing-page__nav-main .landing-page__navigation .nav-link:active, .landing-page__header .landing-page__nav-main .landing-page__navigation .nav-link:hover {
+  color: #fa5757;
+}
+
+.landing-page__header .landing-page__nav-main .landing-page__navigation .landing-page__login {
+  width: 5rem;
+  outline: none;
+  color: #fff;
+  background-color: #fa5757;
+  padding: 8px;
+  border: solid 1px #fa5757;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.landing-page__header .landing-page__nav-main .landing-page__navigation .landing-page__login:active, .landing-page__header .landing-page__nav-main .landing-page__navigation .landing-page__login:hover {
+  background-color: transparent;
+  color: #fa5757;
+}
+
+.landing-page__header .landing-page__mobile-nav {
+  display: none;
+}
+
+.landing-page__hero {
+  position: relative;
+  margin: 70px auto;
+}
+
+.landing-page__hero .landing-page__intro {
+  width: 80vw;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 0.7fr 1fr;
+  justify-content: space-around;
+  gap: 0 20px;
+  align-items: center;
+  font-family: Rubik, Arial;
+}
+
+.landing-page__hero .landing-page__intro .landing-page__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.landing-page__hero .landing-page__intro .landing-page__info p {
+  color: #b1b1b1;
+  line-height: 28px;
+}
+
+.landing-page__hero .landing-page__intro .landing-page__info .extension-btn {
+  display: flex;
+  gap: 10px;
+}
+
+.landing-page__hero .landing-page__intro .landing-page__info .extension-btn a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #f1f1f1;
+}
+
+.landing-page__hero .landing-page__intro .landing-page__info .extension-btn .get-on-chrome {
+  background-color: #5368df;
+  color: #fff;
+  padding: 10px;
+  border: solid 2px #5368df;
+}
+
+.landing-page__hero .landing-page__intro .landing-page__info .extension-btn .get-on-chrome:hover, .landing-page__hero .landing-page__intro .landing-page__info .extension-btn .get-on-chrome:active {
+  background-color: transparent;
+  color: #5368df;
+}
+
+.landing-page__hero .landing-page__intro .landing-page__info .extension-btn .get-on-firefox {
+  background-color: #e1e1e1;
+  padding: 10px;
+  border: solid 2px #e1e1e1;
+}
+
+.landing-page__hero .landing-page__intro .landing-page__info .extension-btn .get-on-firefox:hover, .landing-page__hero .landing-page__intro .landing-page__info .extension-btn .get-on-firefox:active {
+  background-color: transparent;
+  color: #b1b1b1;
+}
+
+.landing-page__hero .landing-page__intro .landing-page_intro-illustration {
+  position: relative;
+}
+
+.landing-page__hero .landing-page__intro .landing-page_intro-illustration img {
+  width: 100%;
+}
+
+.landing-page__hero::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  height: 230px;
+  background-color: #5368df;
+  border-radius: 10pc 0 0 10pc;
+}
+
+@import '_features';
+@import '_responsive';
+@import '_tablet';

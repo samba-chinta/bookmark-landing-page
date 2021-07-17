@@ -1,0 +1,22 @@
+@import url('https://fonts.google.com/specimen/Rubik');
+
+@mixin button-bg($bg) {
+  @if "blue" {
+    background-color: hsl(231, 69%, 60%);
+  } 
+  @if "red" {
+    background-color: hsl(0, 94%, 66%);
+  }
+}
+
+$font-family : Rubik, Arial;
+$font-size : 18px;
+
+@mixin font_weight($wt) {
+  @if "bold" {
+    $font-weight: 500;
+  }
+  @if "light" {
+    $font-family: 400;
+  }
+}

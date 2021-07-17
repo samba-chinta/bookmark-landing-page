@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Bookmark landing page</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!--Navigation-->
+  <header class="landing-page__header" id="lp_header">
+    <div class="landing-page__nav-main">
+      <div class="langing-page__logo">
+        <img src="./images/logo-bookmark.svg" alt="Bookmark Logo">
+      </div>
+      <div class="landing-page_nav_togglers">
+        <img src="./images/icon-hamburger.svg" alt="Toggler" id = "hamburger">
+        <img src="./images/icon-close.svg" alt="Close" id="nav-closer">
+      </div>
+      <nav class="landing-page__navigation">
+        <a href="#" class="nav-link">Features</a>
+        <a href="#" class="nav-link">Pricing</a>
+        <a href="#" class="nav-link">Contact</a>
+        <button class="landing-page__login" type="button">Login</button>
+      </nav>
+    </div>
+    <div class="landing-page__mobile-nav" id="mobile-nav">
+      <div class="mobile-nav__links">
+        <a href="#" class="nav-link">Features</a>
+        <a href="#" class="nav-link">Pricing</a>
+        <a href="#" class="nav-link">Contact</a>
+        <button class="landing-page__login" type="button">Login</button>
+      </div>
+      <div class="social-links">
+        <a href="#">
+          <img src="./images/icon-twitter.svg" alt="twitter">
+        </a>
+        <a href="#">
+          <img src="./images/icon-facebook.svg" alt="twitter">
+        </a>
+      </div>
+    </div>
+  </header>
+  
+  <div class="landing-page__hero">
+    <div class="landing-page__intro">
+      <div class="landing-page__info">
+        <h1>A Simple Bookmark Manager</h1>
+        <p>A clean and simple interface to organize your favourite websites. Open a new 
+          browser tab and see your sites load instantly. Try it for free.</p>
+        <div class="extension-btn">
+          <a href="#" class="get-on-chrome">Get it on Chrome</a>
+          <a href="#" class="get-on-firefox">Get it on Firefox</a>
+        </div>
+      </div>
+      <div class="landing-page_intro-illustration">
+        <img src="./images/illustration-hero.svg" alt="Illustrate">
+      </div>
+    </div>
+  </div>
+
+  <div class="landing-page__features__hero">
+    <div class="landing-page__features__wrapper">
+      <div class="landing-page__features">
+        <h2>Features</h2>
+        <p>
+          Our main aim to make it quick and easy for you to access
+          your favourite websites. Your Bookmarks sync between your
+          devices so you can access them on the go.
+        </p>
+      </div>
+      <div class="landing-page__features__tabs">
+        <ul class="tabs">
+          <li class="tab-links">
+            <a href="#tab-1" id="simple-bookmark">Simple Bookmarking</a>
+          </li>
+          <li class="tab-links">
+            <a href="#tab-2" id="speedy-search">Speedy Searching</a>
+          </li>
+          <li class="tab-links">
+            <a href="#tab-3" id="easy-sharing">Easy Sharing</a>
+          </li>
+        </ul>
+      </div>
+      <div class="landing-page__features__main">
+        <div class="landing-page__features__tab" id="tab-1">
+          <div class="landing-page_tab-illustration">
+            <img src="./images/illustration-features-tab-1.svg" alt="Illustrate">
+          </div>
+          <div class="landing-page__tab__info">
+            <h2>Bookmark in one click</h2>
+            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
+              gives you complete control over how you manage your favourite sites.</p>
+            <div class="info-btn">
+              <a href="#" class="more-info">More Info</a>
+            </div>
+          </div>
+        </div>
+        <div class="landing-page__features__tab" id="tab-2">
+          <div class="landing-page_tab-illustration">
+            <img src="./images/illustration-features-tab-2.svg" alt="Illustrate">
+          </div>
+          <div class="landing-page__tab__info">
+            <h2>Intelligent search</h2>
+            <p>Our powerful search feature will help you find saved sites in no time at all. 
+              No need to trawl through all of your bookmarks.</p>
+            <div class="info-btn">
+              <a href="#" class="more-info">More Info</a>
+            </div>
+          </div>
+        </div>
+        <div class="landing-page__features__tab" id="tab-3">
+          <div class="landing-page_tab-illustration">
+            <img src="./images/illustration-features-tab-3.svg" alt="Illustrate">
+          </div>
+          <div class="landing-page__tab__info">
+            <h2>Share your bookmarks</h2>
+            <p>Easily share your bookmarks and collections with others. Create a shareable 
+              link that you can send at the click of a button.</p>
+            <div class="info-btn">
+              <a href="#" class="more-info">More Info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Samba</a>.
+    </p>
+  </footer>
+  <script src="./script/index.js"></script>
+</body>
+</html>

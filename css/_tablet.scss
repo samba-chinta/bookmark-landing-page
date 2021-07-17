@@ -1,0 +1,26 @@
+@media (max-width : 1000px){
+  .landing-page__header{
+    .landing-page__nav-main{
+      width: 90vw;
+      .landing-page__navigation{
+        width: 60%;
+      }
+    }
+  }
+  .landing-page__hero{
+    .landing-page__intro{
+      width: 90vw;
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 300px;
+      height: 230px;
+      background-color: hsl(231, 69%, 60%);
+      border-radius: 10pc 0 0 10pc;
+    }
+  }
+  
+}
