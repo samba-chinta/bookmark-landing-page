@@ -23,6 +23,7 @@ simpleBookmark.onclick = () => {
   tabsLinks[2].classList.remove("indicator");
   tab2.style.display = "none";
   tab1.style.display = "flex";
+  tab1.style.flexDirection = "column";
   tab3.style.display = "none";
 }
 
@@ -32,6 +33,7 @@ speedySearch.onclick = () => {
   tabsLinks[2].classList.remove("indicator");
   tab1.style.display = "none";
   tab2.style.display = "flex";
+  tab2.style.flexDirection = "column";
   tab3.style.display = "none";
 }
 
@@ -41,6 +43,7 @@ easySharing.onclick = () => {
   tabsLinks[0].classList.remove("indicator");
   tab1.style.display = "none";
   tab3.style.display = "flex";
+  tab3.style.flexDirection = "column";
   tab2.style.display = "none";
 }
 
