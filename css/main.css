@@ -451,7 +451,7 @@
     gap: 10px 0;
   }
 }
-@media (max-width: 1000px) {
+@media (min-width: 760px) and (max-width: 1000px) {
   .landing-page__header .landing-page__nav-main {
     width: 90vw;
   }
