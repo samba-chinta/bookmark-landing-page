@@ -451,7 +451,7 @@
     gap: 10px 0;
   }
 }
-@media (min-width: 760px) and (max-width: 1000px) {
+@media (max-width: 1000px) {
   .landing-page__header .landing-page__nav-main {
     width: 90vw;
   }
@@ -471,19 +471,6 @@
     height: 230px;
     background-color: #5368df;
     border-radius: 10pc 0 0 10pc;
-  }
-
-  .download-extension__wrapper {
-    width: 100%;
-  }
-  .download-extension__wrapper .download-extension__info p {
-    width: 90%;
-  }
-  .download-extension__wrapper .download-entension__cards {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 10px 0;
-    align-items: center;
   }
 }
 

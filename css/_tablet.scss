@@ -1,4 +1,4 @@
-@media (min-width : 760px) and (max-width : 1000px){
+@media (max-width : 1000px){
   .landing-page__header{
     .landing-page__nav-main{
       width: 90vw;
@@ -22,18 +22,5 @@
       border-radius: 10pc 0 0 10pc;
     }
   }
-  .download-extension__wrapper{
-    width: 100%;
-    .download-extension__info{
-      p{
-        width: 90%;
-      }
-    }
-    .download-entension__cards{
-      display: grid;
-      grid-template-columns: auto auto;
-      gap: 10px 0;
-      align-items: center;
-    }
-  }
+  
 }
