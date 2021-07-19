@@ -131,4 +131,18 @@
       }
     }
   }
+
+  .download-extension__wrapper{
+    width: 100%;
+    .download-extension__info{
+      p{
+        width: 90%;
+      }
+    }
+    .download-entension__cards{
+      display: flex;
+      flex-direction: column;
+      gap: 10px 0;
+    }
+  }
 }
