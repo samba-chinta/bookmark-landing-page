@@ -368,6 +368,62 @@
   background-color: #fff;
 }
 
+footer {
+  background-color: #5368df;
+}
+footer .landing-page__footer {
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .landing-page__footer p {
+  font-family: Rubik, Arial;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+footer .landing-page__footer h2 {
+  text-align: center;
+  font-family: Rubik, Arial;
+  color: #fff;
+}
+footer .landing-page__footer form {
+  margin: 20px auto;
+  display: flex;
+  gap: 10px;
+}
+footer .landing-page__footer form [type=email] {
+  outline: none;
+  border: solid 1px #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: Rubik, Arial;
+}
+footer .landing-page__footer form [type=email]::placeholder {
+  color: #b1b1b1;
+}
+footer .landing-page__footer form [type=submit] {
+  outline: none;
+  border: solid 2px #fa5757;
+  padding: 10px;
+  background-color: #fa5757;
+  border-radius: 5px;
+  color: #fff;
+}
+footer .landing-page__footer form [type=submit]:active {
+  background-color: #fff;
+  color: #000;
+}
+footer .landing-page__footer form [type=submit]:hover {
+  background-color: #fff;
+  color: #000;
+}
+
 @media (max-width: 700px) {
   .landing-page__header .landing-page__nav-main {
     margin: 0 auto;
@@ -522,6 +578,10 @@
   .frequently-ask__qstns .frequently-ask__qstns__list .fa-qstns {
     margin: 10px auto;
     padding: 10px;
+  }
+
+  footer .landing-page__footer form {
+    flex-direction: column;
   }
 }
 @media (min-width: 770px) and (max-width: 1000px) {

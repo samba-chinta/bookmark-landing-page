@@ -1,0 +1,55 @@
+footer{
+  background-color: hsl(231, 69%, 60%);
+  .landing-page__footer{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    p{
+      font-family: $font-family;
+      text-align: center;
+      font-size: 16px;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    h2{
+      text-align: center;
+      font-family: $font-family;
+      color: #fff;
+    }
+    form{
+      margin: 20px auto;
+      display: flex;
+      gap: 10px;
+      [type="email"]{
+        outline: none;
+        border: solid 1px #fff;
+        padding: 10px;
+        border-radius: 5px;
+        font-family: $font-family;
+        &::placeholder{
+          color: #b1b1b1;
+        }
+      }
+      [type="submit"]{
+        outline: none;
+        border: solid 2px hsl(0, 94%, 66%);
+        padding: 10px;
+        background-color: hsl(0, 94%, 66%);
+        border-radius: 5px;
+        color: #fff;
+        &:active{
+          background-color: #fff;
+          color: #000;
+        }
+        &:hover{
+          background-color: #fff;
+          color: #000;
+        }
+      }
+    }
+  }
+}

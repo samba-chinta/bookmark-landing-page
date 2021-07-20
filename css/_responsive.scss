@@ -166,4 +166,12 @@
       }
     }
   }
+
+  footer{
+    .landing-page__footer{
+      form{
+        flex-direction: column;
+      }
+    }
+  }
 }
