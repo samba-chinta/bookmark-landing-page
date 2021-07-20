@@ -131,3 +131,7 @@ document.getElementById("qstn-4").onclick = () => {
     qstn.style.color = "#000";
   }
 }
+
+function validate(e){
+  e.preventDefault();
+}
