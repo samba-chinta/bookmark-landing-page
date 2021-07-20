@@ -317,6 +317,57 @@
   color: #5368df;
 }
 
+.frequently-ask__qstns {
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.frequently-ask__qstns .frequently-ask__qstns__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Rubik, Arial;
+}
+.frequently-ask__qstns .frequently-ask__qstns__info p {
+  width: 50%;
+  color: #b1b1b1;
+  text-align: center;
+  line-height: 27px;
+}
+.frequently-ask__qstns .frequently-ask__qstns__list {
+  width: 50%;
+  margin: 10px auto;
+}
+.frequently-ask__qstns .frequently-ask__qstns__list .fa-qstns {
+  list-style: none;
+  font-family: Rubik, Arial;
+  cursor: pointer;
+}
+.frequently-ask__qstns .frequently-ask__qstns__list .fa-qstns .qstns {
+  margin: 15px;
+  line-height: 26px;
+}
+.frequently-ask__qstns .frequently-ask__qstns__list .fa-qstns .qstns .questions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.frequently-ask__qstns .frequently-ask__qstns__list .fa-qstns .qstns .questions i {
+  color: #5368df;
+  font-weight: bolder;
+}
+.frequently-ask__qstns .frequently-ask__qstns__list .fa-qstns .qstns .answers {
+  display: none;
+  margin: 5px;
+  color: #b1b1b1;
+}
+.frequently-ask__qstns .frequently-ask__qstns__list .fa-qstns .qstns::selection {
+  background-color: #fff;
+}
+
 @media (max-width: 700px) {
   .landing-page__header .landing-page__nav-main {
     margin: 0 auto;
@@ -450,8 +501,30 @@
     flex-direction: column;
     gap: 10px 0;
   }
+
+  .frequently-ask__qstns {
+    width: 100%;
+  }
+  .frequently-ask__qstns .frequently-ask__qstns__info {
+    justify-content: center;
+    text-align: center;
+  }
+  .frequently-ask__qstns .frequently-ask__qstns__info p {
+    width: 90%;
+  }
+  .frequently-ask__qstns .frequently-ask__qstns__list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .frequently-ask__qstns .frequently-ask__qstns__list .fa-qstns {
+    margin: 10px auto;
+    padding: 10px;
+  }
 }
-@media (max-width: 1000px) {
+@media (min-width: 770px) and (max-width: 1000px) {
   .landing-page__header .landing-page__nav-main {
     width: 90vw;
   }
@@ -471,6 +544,21 @@
     height: 230px;
     background-color: #5368df;
     border-radius: 10pc 0 0 10pc;
+  }
+
+  .download-extension__wrapper {
+    width: 100%;
+  }
+  .download-extension__wrapper .download-extension__info p {
+    width: 90%;
+  }
+  .download-extension__wrapper .download-entension__cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px 0;
+  }
+  .download-extension__wrapper .download-entension__cards .Cards {
+    width: 100%;
   }
 }
 

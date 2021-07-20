@@ -145,4 +145,25 @@
       gap: 10px 0;
     }
   }
+  .frequently-ask__qstns{
+    width: 100%;
+    .frequently-ask__qstns__info{
+      justify-content: center;
+      text-align: center;
+      p{
+        width: 90%;
+      }
+    }
+    .frequently-ask__qstns__list{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      .fa-qstns{
+        margin: 10px auto;
+        padding: 10px;
+      }
+    }
+  }
 }

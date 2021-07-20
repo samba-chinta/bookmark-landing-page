@@ -73,3 +73,61 @@ navCloser.onclick = () => {
   hamBurger.style.display = "block";
   navCloser.style.display = "none";
 }
+
+let states = [false, false, false, false];
+
+document.getElementById("qstn-1").onclick = () => {
+  let qstn = document.getElementById("qstn-1")
+  let ans = document.getElementById("ans-1");
+  if(!states[0]){
+    ans.style.display = "block";
+    qstn.style.color = "hsl(0, 94%, 66%)";
+    states[0] = true;
+  } else {
+    ans.style.display = "none";
+    states[0] = false;
+    qstn.style.color = "#000";
+  }
+}
+
+document.getElementById("qstn-2").onclick = () => {
+  let ans = document.getElementById("ans-2");
+  let qstn = document.getElementById("qstn-2");
+  if(!states[1]){
+    ans.style.display = "block";
+    states[1] = true;
+    qstn.style.color = "hsl(0, 94%, 66%)";
+  } else {
+    ans.style.display = "none";
+    states[1] = false;
+    qstn.style.color = "#000";
+  }
+}
+
+document.getElementById("qstn-3").onclick = () => {
+  let ans = document.getElementById("ans-3");
+  let qstn = document.getElementById("qstn-3");
+  if(!states[2]){
+    ans.style.display = "block";
+    states[2] = true;
+    qstn.style.color = "hsl(0, 94%, 66%)";
+  } else {
+    ans.style.display = "none";
+    states[2] = false;
+    qstn.style.color = "#000";
+  }
+}
+
+document.getElementById("qstn-4").onclick = () => {
+  let qstn = document.getElementById("qstn-4");
+  let ans = document.getElementById("ans-4");
+  if(!states[3]){
+    ans.style.display = "block";
+    states[3] = true;
+    qstn.style.color = "hsl(0, 94%, 66%)";
+  } else {
+    ans.style.display = "none";
+    states[3] = false;
+    qstn.style.color = "#000";
+  }
+}

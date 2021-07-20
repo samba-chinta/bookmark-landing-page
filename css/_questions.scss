@@ -1,0 +1,50 @@
+.frequently-ask__qstns{
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .frequently-ask__qstns__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $font-family;
+    p{
+      width: 50%;
+      color: #b1b1b1;
+      text-align: center;
+      line-height: 27px;
+    }
+  }
+  .frequently-ask__qstns__list{
+    width: 50%;
+    margin: 10px auto;
+    .fa-qstns{
+      list-style: none;
+      font-family: $font-family;
+      cursor: pointer;
+      .qstns{
+        margin: 15px;
+        line-height: 26px;
+        .questions{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          i{
+            color: hsl(231, 69%, 60%);
+            font-weight: bolder;
+          }
+        }
+        .answers{
+          display: none;
+          margin: 5px;
+          color: #b1b1b1;
+        }
+        &::selection{
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
